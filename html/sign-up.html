@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        form {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5%;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #fff;
+        }
+
+        form a{
+            text-decoration: none;
+        }
+
+        form a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+        .button-flex{
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+              <div class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="../images/bike.png" alt="" width="100" height="90"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+                  <ul class="navbar-nav align-items-center px-5" style="font-size: 25px">
+                    <li class="nav-item px-3">
+                      <a class="nav-link active box-shadow" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link active" id="" href="index.html">About us</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link active" id="" href="store.html">Store</a>
+                    </li>
+                    <li class="nav-item px-3">
+                      <a class="nav-link active" href="#Contacts">Contacts</a>
+                    </li>
+                    <li class="nav-item px-5">
+                      <a href="sign-up.html" class="btn btn-dark ms-auto">Sing Up</a>
+                    </li>
+                    <li class="nav-item px-5">
+                      <a href="sign-in.html" class="btn btn-dark ms-auto">Sing In</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    
+          <form>
+            <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+        
+            <div class="form-floating">
+                <input type="text" class="form-control" id="first" placeholder="First name">
+                <label for="first">First name</label>
+            </div>
+            <br>
+        
+            <div class="form-floating">
+                <input type="text" class="form-control" id="second" placeholder="Last name">
+                <label for="second">Last name</label>
+            </div>
+            <br>
+        
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="email">Email address</label>
+            </div>
+            <br>
+        
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                <label for="password">Password</label>
+            </div>
+            <br>
+        
+            <div class="form-floating">
+                <input type="password" class="form-control" id="cPassword" placeholder="Confirm Password">
+                <label for="cPassword">Confirm Password</label>
+            </div>
+            <br>
+        
+            <div class="button-flex">
+                <button class="w-100 btn btn-dark ms-auto" type="button" onclick="validateForm()">Sign Up</button>
+                <button class="w-100 btn btn-dark ms-auto"><a href="index.html">Back</a></button>
+            </div>
+        </form>
+
+      <footer class="bg-white text-center">
+        <section class="bg-white d-flex justify-content-center p-4 border-bottom">
+          <div class="me-5 d-none d-lg-block">
+            <span>Social Networks:</span>
+          </div>
+          <div>
+            <a href="" class="me-4 text-rest text-dark"> <i class="fab fa-instagram"></i></a>
+            <a href="" class="me-4 text-rest text-dark"> <i class="fab fa-twitter"></i></a>
+            <a href="" class="me-4 text-rest text-dark"> <i class="fab fa-facebook"></i></a>
+            <a href="" class="me-4 text-rest text-dark"> <i class="fab fa-youtube"></i></a>
+          </div>
+        </section>
+  
+        <section class="bg-white">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Limitless Wheel
+                </h6>
+                <p>
+                  Empowering Journeys, Unbounded Thrills: Where Limitless Adventures Begin with Limitless Wheel.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4" id="Contacts">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Astana, Mangilik El C1</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@wheel.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +7 777 096 66 45</p>
+                <p><i class="fab fa-whatsapp me-3"></i> +7 708 625 71 39</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+  
+  
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">lw.com</a>
+        </div>
+      </footer>
+
+      <script>
+        function validateForm() {
+            // Get values from the form
+            var firstName = document.getElementById('first').value;
+            var lastName = document.getElementById('second').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('cPassword').value;
+    
+            if (firstName !== '' && lastName !== '' && email !== '' && password !== '' && confirmPassword !== '') {
+                if (password === confirmPassword) {
+                    alert('Sign up successful!');
+                } else {
+                    alert('Passwords do not match.');
+                }
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+</body>
+</html>
